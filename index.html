@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tính entropy</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	    <!-- jQuery library -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	    <!-- Popper JS -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	    <!-- Latest compiled JavaScript -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/respondsive.css">
+</head>
+
+<body>
+	<div class="jumbotron">
+		<h4>Giá trị của H</h4>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label for="weight">Nhãn tốt:</label>
+					<input required type="number"
+						class="form-control"
+						placeholder=""
+						id="toth"
+						name="weight">
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+
+
+				<div class="form-group">
+					<label for="width">Nhãn khá:</label>
+					<input required type="number"
+						class="form-control"
+						placeholder=""
+						id="khah"
+						name="width">
+				</div>
+
+			</div>
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label for="long">Nhãn kém:</label>
+					<input required type="number"
+						class="form-control"
+						placeholder=""
+						id="kemh" name="long">
+				</div>
+			</div>
+		</div>
+		<h4>Giá trị thuộc tính thứ nhất H(i1)</h4>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label for="weight">Nhãn tốt:</label>
+					<input required type="number"
+						class="form-control"
+						placeholder=""
+						id="tothi1"
+						name="weight">
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+
+
+				<div class="form-group">
+					<label for="width">Nhãn khá:</label>
+					<input required type="number"
+						class="form-control"
+						placeholder=""
+						id="khahi1"
+						name="width">
+				</div>
+
+			</div>
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label for="long">Nhãn kém:</label>
+					<input required type="number"
+						class="form-control"
+						placeholder=""
+						id="kemhi1" name="long">
+				</div>
+			</div>
+		</div>
+		<h4>Giá trị thuộc tính thứ hai H(i2)</h4>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label for="weight">Nhãn tốt:</label>
+					<input required type="number"
+						class="form-control"
+						placeholder=""
+						id="tothi2"
+						name="weight">
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+
+
+				<div class="form-group">
+					<label for="width">Nhãn khá:</label>
+					<input required type="number"
+						class="form-control"
+						placeholder=""
+						id="khahi2"
+						name="width">
+				</div>
+
+			</div>
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label for="long">Nhãn kém:</label>
+					<input required type="number"
+						class="form-control"
+						placeholder=""
+						id="kemhi2" name="long">
+				</div>
+			</div>
+		</div>
+		<h4>Giá trị thuộc tính thứ ba H(i2)</h4>
+		
+		<label><input type="checkbox" id="checkhi3"> Nếu có thuộc tính thứ 3 thì tích vào ô này</label>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label for="weight">Nhãn tốt:</label>
+					<input required type="number"
+						class="form-control"
+						placeholder=""
+						id="tothi3"
+						name="weight">
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+
+
+				<div class="form-group">
+					<label for="width">Nhãn khá:</label>
+					<input required type="number"
+						class="form-control"
+						placeholder=""
+						id="khahi3"
+						name="width">
+				</div>
+
+			</div>
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label for="long">Nhãn kém:</label>
+					<input required type="number"
+						class="form-control"
+						placeholder=""
+						id="kemhi3" name="long">
+				</div>
+			</div>
+		</div>
+		<button id="tinh" class="btn btn-success btn-block">Tính</button>
+				<div class="m-4">Kết quả là IG = <span id="ig"></span> </div>
+	</div>
+	
+	
+	<script src="./assets/js/script.js"></script>
+</body>
+
+</html>
