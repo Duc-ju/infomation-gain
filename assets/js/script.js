@@ -41,9 +41,16 @@ document.getElementById('tinh').onclick = () => {
 	if(!isHasI3){
 		document.getElementById('ig').innerHTML = entropyh-entropyhi1*sumhi1/sumh-entropyhi2*sumhi2/sumh
         document.getElementById('hi3').innerHTML = 'không tồn tại'
+        if(sumh!==(sumhi1+sumhi2)){
+            alert('Một trong những số liệu nào đấy bị sai, kiểm tra số liệu với xem có tích thừa hay thiếu không nhé!')
+        }
 	}
 	else{
         document.getElementById('hi3').innerHTML = entropyhi3
 		document.getElementById('ig').innerHTML = entropyh-entropyhi1*sumhi1/sumh-entropyhi2*sumhi2/sumh-entropyhi3*sumhi3/sumh
+        if(sumh!==(sumhi1+sumhi2+sum3)){
+            alert('Một trong những số liệu nào đấy bị sai, kiểm tra số liệu với xem có tích thừa hay thiếu không nhé!')
+        }
 	}
+    
 }
