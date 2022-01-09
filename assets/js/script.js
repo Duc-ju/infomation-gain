@@ -35,10 +35,15 @@ document.getElementById('tinh').onclick = () => {
     let sumhi3 = tothi3 + khahi3 +kemhi3;
     let entropyhi3 = entropy(tothi3, khahi3, kemhi3)
     let isHasI3 = document.getElementById('checkhi3').checked
+    document.getElementById('h').innerHTML = entropyh
+    document.getElementById('hi1').innerHTML = entropyhi1
+    document.getElementById('hi2').innerHTML = entropyhi2
 	if(!isHasI3){
 		document.getElementById('ig').innerHTML = entropyh-entropyhi1*sumhi1/sumh-entropyhi2*sumhi2/sumh
+        document.getElementById('hi3').innerHTML = 'không tồn tại'
 	}
 	else{
+        document.getElementById('hi3').innerHTML = entropyhi3
 		document.getElementById('ig').innerHTML = entropyh-entropyhi1*sumhi1/sumh-entropyhi2*sumhi2/sumh-entropyhi3*sumhi3/sumh
 	}
 }
